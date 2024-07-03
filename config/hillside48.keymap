@@ -6,7 +6,6 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
-#include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
 
@@ -37,10 +36,10 @@
 
         windows {
             bindings = <
-&kp TAB    &kp Q  &kp W             &kp E  &kp R  &kp T                                                            &kp Y     &kp U    &kp I      &kp O    &kp P      &kp NON_US_BACKSLASH
-&kp GRAVE  &kp A  &kp S             &kp D  &kp F  &kp G                                                            &kp H     &kp J    &kp K      &kp L    &kp SEMI   &kp SQT
-&kp LSHFT  &kp Z  &kp X             &kp C  &kp V  &kp B  &kp CAPSLOCK                                   &kp ESC    &kp N     &kp M    &kp COMMA  &kp DOT  &kp SLASH  &kp RSHFT
-                  &kp LEFT_CONTROL         &mo 3  &mo 2  &kp SPACE     &kp BACKSPACE  &kp LEFT_COMMAND  &kp ENTER  &kp RALT  &kp SQT             &to 0
+&kp TAB    &kp Q  &kp W         &kp E  &kp R  &kp T                                                            &kp Y     &kp U    &kp I      &kp O    &kp P      &kp NON_US_BACKSLASH
+&kp GRAVE  &kp A  &kp S         &kp D  &kp F  &kp G                                                            &kp H     &kp J    &kp K      &kp L    &kp SEMI   &kp SQT
+&kp LSHFT  &kp Z  &kp X         &kp C  &kp V  &kp B  &kp CAPSLOCK                                   &kp ESC    &kp N     &kp M    &kp COMMA  &kp DOT  &kp SLASH  &kp RSHFT
+                  &kp LEFT_WIN         &mo 3  &mo 2  &kp SPACE     &kp BACKSPACE  &kp LEFT_CONTROL  &kp ENTER  &kp RALT  &kp SQT             &to 0
             >;
         };
 
@@ -54,10 +53,10 @@
  */
 
             bindings = <
-&kp F11    &trans  &trans    &kp UP    &kp LBKT   &kp RBKT                                       &kp N7  &kp N8  &kp N9  &kp F7  &kp F8  &kp F9
-&kp F12    &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LBKT                                       &kp N4  &kp N5  &kp N6  &kp F4  &kp F5  &kp F6
-&kp LSHFT  &trans  &trans    &trans    &trans     &kp EQUAL  &kp LBKT                  &kp RBKT  &kp N1  &kp N2  &kp N3  &kp F1  &kp F2  &kp F3
-                   &trans              &trans     &trans     &trans    &trans  &trans  &trans    &trans  &kp N0          &trans
+&trans     &kp F10  &trans    &kp UP    &kp LBKT   &kp RBKT                                       &kp N7  &kp N8  &kp N9  &kp F7  &kp F8  &kp F9
+&trans     &kp F11  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LBKT                                       &kp N4  &kp N5  &kp N6  &kp F4  &kp F5  &kp F6
+&kp LSHFT  &kp F12  &trans    &trans    &trans     &kp EQUAL  &kp LBKT                  &kp RBKT  &kp N1  &kp N2  &kp N3  &kp F1  &kp F2  &kp F3
+                    &trans              &trans     &trans     &trans    &trans  &trans  &trans    &trans  &kp N0          &trans
             >;
         };
 
@@ -71,10 +70,10 @@
  */
 
             bindings = <
-&kp HOME  &kp EXCL  &kp AT    &kp HASH   &kp DOLLAR  &kp PERCENT                                      &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR   &kp RPAR  &trans
-&kp END   &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT   &kp PG_UP                                        &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT   &kp BSLH  &trans
-&trans    &kp Undo  &kp Cut   &kp Copy   &kp Paste   &kp PG_DN    &sk RALT                 &kp K_APP  &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC   &kp PIPE  &trans
-                    &trans               &trans      &trans       &trans    &trans  &mo 4  &trans     &trans     &trans                &kp RCTRL
+&trans    &kp N1    &kp N2    &kp N3     &kp N4     &kp N5                                         &kp N6     &kp N7     &kp N8    &kp N9     &kp N0    &kp MINUS
+&kp HOME  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &kp PG_UP                                      &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT   &kp BSLH  &trans
+&kp END   &kp Undo  &kp Cut   &kp Copy   &kp Paste  &kp PG_DN  &sk RALT                 &kp K_APP  &kp UNDER  &kp PLUS   &kp LBRC  &kp RBRC   &kp PIPE  &trans
+                    &trans               &trans     &trans     &trans    &trans  &mo 4  &trans     &trans     &trans               &kp RCTRL
             >;
         };
 
@@ -88,10 +87,10 @@
  */
 
             bindings = <
-&to 0        &to 0         &to 0         &to 0         &to 2         &none                                             &none   &kp PRINTSCREEN  &none  &ext_power EP_OFF  &ext_power EP_ON  &none
-&none        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                      &none   &none            &none  &none              &none             &none
-&bootloader  &sys_reset    &none         &out OUT_USB  &out OUT_BLE  &none         &bt BT_CLR                  &none   &none   &none            &none  &none              &none             &trans
-                           &trans                      &trans        &trans        &trans      &trans  &trans  &trans  &trans  &trans                  &kp RCTRL
+&to 0        &to 0         &to 0         &to 0         &trans        &none                                             &none   &trans  &none  &trans  &trans  &none
+&none        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                                      &none   &none   &none  &none   &none   &none
+&bootloader  &sys_reset    &none         &out OUT_USB  &out OUT_BLE  &none         &bt BT_CLR                  &none   &none   &none   &none  &none   &none   &trans
+                           &trans                      &trans        &trans        &trans      &trans  &trans  &trans  &trans  &trans         &trans
             >;
         };
     };
