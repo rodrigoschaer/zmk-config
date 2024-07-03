@@ -28,19 +28,19 @@
 
         mac {
             bindings = <
-&kp TAB    &kp Q  &kp W             &kp E  &kp R  &kp T                                                            &kp Y     &kp U    &kp I      &kp O            &kp P      &kp NON_US_BACKSLASH
-&kp GRAVE  &kp A  &kp S             &kp D  &kp F  &kp G                                                            &kp H     &kp J    &kp K      &kp L            &kp SEMI   &kp SQT
-&kp LSHFT  &kp Z  &kp X             &kp C  &kp V  &kp B  &kp CAPSLOCK                                   &kp ESC    &kp N     &kp M    &kp COMMA  &kp DOT          &kp SLASH  &kp RSHFT
-                  &kp LEFT_CONTROL         &mo 2  &mo 3  &kp SPACE     &kp BACKSPACE  &kp LEFT_COMMAND  &kp ENTER  &kp RALT  &kp SQT             &kp PRINTSCREEN
+&kp TAB    &kp Q  &kp W             &kp E  &kp R  &kp T                                                            &kp Y     &kp U    &kp I      &kp O    &kp P      &kp NON_US_BACKSLASH
+&kp GRAVE  &kp A  &kp S             &kp D  &kp F  &kp G                                                            &kp H     &kp J    &kp K      &kp L    &kp SEMI   &kp SQT
+&kp LSHFT  &kp Z  &kp X             &kp C  &kp V  &kp B  &kp CAPSLOCK                                   &kp ESC    &kp N     &kp M    &kp COMMA  &kp DOT  &kp SLASH  &kp RSHFT
+                  &kp LEFT_CONTROL         &mo 3  &mo 2  &kp SPACE     &kp BACKSPACE  &kp LEFT_COMMAND  &kp ENTER  &kp RALT  &kp SQT             &to 1
             >;
         };
 
-        arrows_layer {
+        windows {
             bindings = <
-&trans  &trans  &trans    &kp UP    &trans     &kp LBKT                                   &kp RBKT   &kp N7        &kp N8  &kp N9  &kp ASTRK  &trans
-&trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LBKT                                   &kp RBKT   &kp N4        &kp N5  &kp N6  &kp PLUS   &trans
-&trans  &trans  &trans    &trans    &trans     &kp EQUAL  &trans                  &trans  &kp EQUAL  &kp NUMBER_1  &kp N2  &kp N3  &kp EQUAL  &trans
-                &trans              &trans     &trans     &trans  &trans  &trans  &trans  &trans     &trans                &trans
+&kp TAB    &kp Q  &kp W             &kp E  &kp R  &kp T                                                            &kp Y     &kp U    &kp I      &kp O    &kp P      &kp NON_US_BACKSLASH
+&kp GRAVE  &kp A  &kp S             &kp D  &kp F  &kp G                                                            &kp H     &kp J    &kp K      &kp L    &kp SEMI   &kp SQT
+&kp LSHFT  &kp Z  &kp X             &kp C  &kp V  &kp B  &kp CAPSLOCK                                   &kp ESC    &kp N     &kp M    &kp COMMA  &kp DOT  &kp SLASH  &kp RSHFT
+                  &kp LEFT_CONTROL         &mo 3  &mo 2  &kp SPACE     &kp BACKSPACE  &kp LEFT_COMMAND  &kp ENTER  &kp RALT  &kp SQT             &to 0
             >;
         };
 
@@ -54,10 +54,10 @@
  */
 
             bindings = <
-&kp F1     &kp F2  &kp HOME  &kp UP    &kp END    &kp F9                                       &kp SLASH  &kp N7  &kp N8  &kp N9    &kp MINUS  &trans
-&kp F3     &kp F4  &kp LEFT  &kp DOWN  &kp RIGHT  &kp F10                                      &kp ASTRK  &kp N4  &kp N5  &kp N6    &kp PLUS   &trans
-&kp LSHFT  &kp F5  &kp F6    &kp F7    &kp F8     &kp F11  &kp F12                 &kp C_MUTE  &kp COMMA  &kp N1  &kp N2  &kp N3    &kp EQUAL  &kp DEL
-                   &trans              &trans     &trans   &trans   &mo 4  &trans  &trans      &kp N0     &trans          &kp C_PP
+&kp F11    &trans  &trans    &kp UP    &kp LBKT   &kp RBKT                                       &kp N7  &kp N8  &kp N9  &kp F7  &kp F8  &kp F9
+&kp F12    &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LBKT                                       &kp N4  &kp N5  &kp N6  &kp F4  &kp F5  &kp F6
+&kp LSHFT  &trans  &trans    &trans    &trans     &kp EQUAL  &kp LBKT                  &kp RBKT  &kp N1  &kp N2  &kp N3  &kp F1  &kp F2  &kp F3
+                   &trans              &trans     &trans     &trans    &trans  &trans  &trans    &trans  &kp N0          &trans
             >;
         };
 
