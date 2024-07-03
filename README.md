@@ -1,9 +1,8 @@
-# Hillside ZMK firmware
+# Hillside 48 ZMK firmware
 
-![hillside](https://github.com/FilippeMafra/hillside-zmk-config/assets/7794852/e77daf85-38e3-406f-ad33-0ac3d3c258df)
+![image](https://github.com/rodrigoschaer/zmk-config/assets/70034234/0fb8c6e4-0121-4ca6-93d1-b0fee3defa6a)
 
-
-[![Build](https://github.com/FilippeMafra/hillside-zmk-config/actions/workflows/build.yml/badge.svg)](https://github.com/FilippeMafra/hillside-zmk-config/actions/workflows/build.yml)
+[![Build](https://github.com/rodrigoschaer/zmk-config/actions/workflows/build.yml/badge.svg)](https://github.com/FilippeMafra/hillside-zmk-config/actions/workflows/build.yml)
 
 This is the [ZMK](https://zmk.dev/docs) firmware
  for the [Hillside](https://github.com/mmccoyd/hillside) family of split ergonomic keyboards.
@@ -23,7 +22,7 @@ To build the firmware:
 - Trigger a build:
   - Make a trivial change to ./build.yaml (or any non *.md file)
   - Push that change
-- Look in the [Actions](https://github.com/mmccoyd/zmk-config/actions) tab
+- Look in the [Actions](https://github.com/rodrigoschaer/zmk-config/actions) tab
      for the build triggered by that change. 
 - Wait for the build to finish
 - Click on the build link next to the green checkbox
