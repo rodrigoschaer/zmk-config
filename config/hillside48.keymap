@@ -27,10 +27,10 @@
 
         mac {
             bindings = <
-&kp TAB    &kp Q  &kp W             &kp E  &kp R  &kp T                                                                &kp Y  &kp U  &kp I      &kp O    &kp P      &kp NON_US_BACKSLASH
-&kp ESC    &kp A  &kp S             &kp D  &kp F  &kp G                                                                &kp H  &kp J  &kp K      &kp L    &kp SEMI   &kp SQT
-&kp LSHFT  &kp Z  &kp X             &kp C  &kp V  &kp B      &kp ESCAPE                                     &kp ESC    &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp RSHFT
-                  &kp LEFT_CONTROL         &mo 2  &kp SPACE  &kp BACKSPACE  &kp LEFT_COMMAND  &kt LEFT_ALT  &kp ENTER  &mo 3  &mo 4             &to 1
+&kp TAB    &kp Q  &kp W             &kp E  &kp R  &kp T                                                                           &kp Y  &kp U  &kp I      &kp O    &kp P      &kp BACKSLASH
+&kp ESC    &kp A  &kp S             &kp D  &kp F  &kp G                                                                           &kp H  &kp J  &kp K      &kp L    &kp SEMI   &kp SQT
+&kp LSHFT  &kp Z  &kp X             &kp C  &kp V  &kp B      &kp LEFT_BRACKET                                  &kp RIGHT_BRACKET  &kp N  &kp M  &kp COMMA  &kp DOT  &kp SLASH  &kp RSHFT
+                  &kp LEFT_CONTROL         &mo 2  &kp SPACE  &kp BACKSPACE     &kp LEFT_COMMAND  &kt LEFT_ALT  &kp ENTER          &mo 3  &mo 4             &to 1
             >;
         };
 
